@@ -7,6 +7,9 @@ To perform dimensionality reduction using PCA
 
 X - Data matrix
 
+#### Returns 
+recons_data - Reconstructed Data Matrix with reduced number of dimensions
+
 ## gmm_em.r
 To implement Gaussian Mixture Models using Expectation-Maximization Algorithm
 #### Arguments
@@ -14,3 +17,6 @@ To implement Gaussian Mixture Models using Expectation-Maximization Algorithm
 recons_data - Data matrix after dimensionality reduction
 
 clus - Number of Gaussian clusters
+
+#### Returns 
+Parameters - A list containing the parameters (mean, covariance matrix and weights) corresponding to each cluster.
