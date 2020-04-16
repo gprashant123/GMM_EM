@@ -97,7 +97,7 @@ return(Parameters)
 X = load("SRA635094_SRS2725547.sparse-RPKM.RData")
 recons_data = PCA(X)
 #Number of clusters
-clus = 5
+clus = 3
 Parameters = gmm_em(recons_data,clus)
 
 for (i in 1:clus){
@@ -105,5 +105,6 @@ for (i in 1:clus){
 }
 R = R/rowSums(R)
 
+#Clustering result
 classification = cbind(1:nrow(R), max.col(R, 'first'))
 View(classification)
